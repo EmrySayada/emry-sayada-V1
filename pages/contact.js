@@ -23,7 +23,7 @@ const Contact = () => {
                         <button className='h-[50px] w-[120px] opacity-0 bg-white/30 rounded-[10px] mt-[20px] border-2 hover:drop-shadow-lg transition-all group animate-[fadeIn_1000ms_400ms_ease_forwards]'>
                             <p className='font-Poppins font-medium transition-all text-black'>Send</p>
                         </button>
-                        <p className='font-Poppins mt-[10px]'>The contact doesn't work as I am not looking for a job.</p>
+                        <p className='font-Poppins mt-[10px]'>The contact doesn&apos;t work as I am not looking for a job.</p>
                     </div>
                     <Footer />
                 </>

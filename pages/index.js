@@ -15,6 +15,7 @@ function App() {
       {loading === false ? (
         <>
           <Header />
+          <title>Emry Sayada</title>
           <div className="flex flex-col overflow-hidden bg-[#AAAAAA] items-center justify-center">
             <div className="h-screen w-screen flex items-center justify-center flex-col">
               <p

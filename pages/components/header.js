@@ -33,13 +33,13 @@ const Header = () => {
   };
   const onMenuBtnPress = () => {
     const hamMenu = document.getElementById("hamMenu");
+    const parent = document.getElementById("hamMenu");
+    const homeBtn = parent.children[1];
+    const aboutBtn = parent.children[2];
+    const contactBtn = parent.children[3];
     if (menuOpen === false) {
       hamMenu.classList.remove("opacity-0", "z-0");
       hamMenu.classList.add("opacity-1", "z-10");
-      const parent = document.getElementById("hamMenu");
-      const homeBtn = parent.children[1];
-      const aboutBtn = parent.children[2];
-      const contactBtn = parent.children[3];
       homeBtn.classList.add("opacity-1");
       aboutBtn.classList.add("opacity-1");
       contactBtn.classList.add("opacity-1");
@@ -48,6 +48,9 @@ const Header = () => {
     } else if (menuOpen === true) {
       hamMenu.classList.remove("opacity-1", "z-10");
       hamMenu.classList.add("opacity-0", "z-0");
+      homeBtn.classList.remove("opacity-1");
+      aboutBtn.classList.remove("opacity-1");
+      contactBtn.classList.remove("opacity-1");
       setMenuOpen(false);
     }
   };
@@ -104,7 +107,7 @@ const Header = () => {
       </div>
       {/* hamnurger menu items */}
       <div
-        className="flex flex-col w-screen h-screen bg-[#BBBBBB] items-center justify-center absolute z-10 opacity-0 transition-all computer:hidden"
+        className="flex flex-col w-screen h-[90vh] bg-[#BBBBBB] items-center justify-center absolute z-10 opacity-0 transition-all computer:hidden"
         id="hamMenu"
       >
         <p className="font-Poppins font-semibold text-2xl phone:text-xl">

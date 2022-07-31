@@ -57,7 +57,7 @@ const Header = () => {
         className="h-[10vh] bg-[#BBBBBB] drop-shadow-xl flex flex-row items-center translate-y-[-100px] animate-[headerShow_1s_ease_forwards] phone:justify-center"
         id="header"
       >
-        <div className="w-[15%] ml-[25px] phone:w-[50%]">
+        <div className="w-[15%] ml-[25px] phone:w-[50%] computer:w-[11%]">
           <Link href={"/"}>
             <button className="font-Poppins font-semibold text-2xl phone:text-xl">
               Emry Sayada

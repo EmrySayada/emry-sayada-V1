@@ -1,19 +1,28 @@
 import React, { useState, useEffect, useRef } from "react";
 import ActivityIndicator from "./components/activityIndecator";
-import backImg from "./assets/back.svg";
 import Link from "next/link";
 import Header from "./components/header";
 import Footer from "./components/footer";
+import Cursor from "./components/cursor";
 
 function App() {
   const [loading, setLoading] = useState(true);
+  // const [xPos, setXPos] = useState();
+  // const [yPos, setYPos] = useState();
   useEffect(() => {
     setTimeout(() => setLoading(false), 2700);
   }, []);
+  // const getCursorPos = (event) => {
+  //   setXPos(event.clientX);
+  //   setYPos(event.clientY);
+  //   // console.log("x: ", xPos);
+  //   // console.log("y: ", yPos);
+  //   return { x: event.clientX, y: event.clientY };
+  // };
   return (
     <>
       {loading === false ? (
-        <>
+        <div>
           <Header />
           <title>Emry Sayada</title>
           <div className="flex flex-col overflow-hidden bg-[#AAAAAA] items-center justify-center">
@@ -57,7 +66,7 @@ function App() {
             </div>
           </div>
           <Footer />
-        </>
+        </div>
       ) : (
         <ActivityIndicator />
       )}

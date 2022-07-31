@@ -16,7 +16,7 @@ const About = () => {
         <>
           <Header footerId="footer" />
           <title>Emry Sayada</title>\
-          <div className="flex flex-col h-screen overflow-x-hidden">
+          <div className="flex flex-col h-screen">
             <p className="font-Poppins font-semibold text-3xl mt-[30px] ml-[50px] opacity-0 animate-[fadeIn_500ms_ease_forwards]">
               About Me
             </p>

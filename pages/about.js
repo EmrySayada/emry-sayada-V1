@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ActivityIndicator from "./components/activityIndecator";
-import Link from "next/link";
-import Project from "./components/project";
 import Header from "./components/header";
 import Footer from "./components/footer";
-import Slide from "./components/slide";
 import Slides from "./components/slides";
 
 const About = () => {

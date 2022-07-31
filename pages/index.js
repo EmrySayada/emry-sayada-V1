@@ -3,7 +3,6 @@ import ActivityIndicator from "./components/activityIndecator";
 import Link from "next/link";
 import Header from "./components/header";
 import Footer from "./components/footer";
-import Cursor from "./components/cursor";
 
 function App() {
   const [loading, setLoading] = useState(true);

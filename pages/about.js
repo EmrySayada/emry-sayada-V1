@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import react, { useState, useEffect } from "react";
 import ActivityIndicator from "./components/activityIndecator";
 import Header from "./components/header";
 import Footer from "./components/footer";
@@ -15,7 +15,6 @@ const About = () => {
     "Then I finally got to where I am today which web front-end development and design.",
     "Right now I mostly use reactjs, react native (which I prefer much more than flutter), nextjs, tailwind css and other libraries and frameworks.",
     "As of today (2022) I am in 9th grade almost going to the 10th.",
-    // "In middle school I was in a spacial class which tought us more then the regualar subject like Math and geography, In the class every monday we would learn in the Ben Gurion Uni in beersheva, Israel a simplefied version of the medicine program in the Uni.",
     "In middle school I was accepted to a class where every monday we would learn at the Ben Gurion University at Beersheva, Israel.",
     "A simplefied version of the medicine program in the Uni",
     "Through my school there is a yearly debate compatition in english (as the first language of most students including mine is hebrew) between differente middle schools from the south of israel and the 2 schools that win will be participating in the national debate championship in israel.",

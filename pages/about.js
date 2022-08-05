@@ -32,12 +32,12 @@ const About = () => {
         <>
           <Header />
           <title>Emry Sayada</title>
-          <div className="flex flex-col h-screen items-center">
-            <p className="font-Poppins font-semibold text-3xl mt-[30px] opacity-0 animate-[fadeIn_500ms_ease_forwards]">
-              About Me
-            </p>
+          <div className="flex flex-col h-[90vh] items-center">
             <div className="animate-[fadeIn_500ms_250ms_ease_forwards]">
-              <div className="flex flex-col h-screen w-[90vh] items-center justify-center phone:w-[40vh]">
+              <div className="flex flex-col h-[90vh] w-[90vh] items-center justify-center phone:w-[40vh]">
+                <p className="font-Poppins font-semibold text-3xl mb-[30px] opacity-0 animate-[fadeIn_500ms_ease_forwards]">
+                  About Me
+                </p>
                 <Slide content={AboutText[currentSlide]} />
                 <div className="flex flex-row justify-evenly w-[inherit] mt-[10vh]">
                   <button

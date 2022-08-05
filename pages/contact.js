@@ -14,7 +14,7 @@ const Contact = () => {
         <>
           <Header />
           <title>Emry Sayada</title>
-          <div className="flex flex-col h-screen items-center justify-center">
+          <div className="flex flex-col h-[90vh] items-center justify-center">
             <p className="font-Poppins mb-[10px] text-[24px] font-semibold animate-[fadeIn_1s_ease_forwards] opacity-0">
               Contact
             </p>

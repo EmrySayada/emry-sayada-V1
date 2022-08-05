@@ -2,9 +2,10 @@ import react, { useState, useEffect } from "react";
 import ActivityIndicator from "./components/activityIndecator";
 import Header from "./components/header";
 import Footer from "./components/footer";
-import Slides from "./components/slides";
+import Slide from "./components/slide";
 
 const About = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
   const [loading, setLoading] = useState(true);
   const AboutText = [
     "Hello I am Emry Sayada or Emry_soda.exe",
@@ -21,6 +22,8 @@ const About = () => {
     "The first year that I participated we didn't win however, the second year (this year) we did win!",
     "I am planning on majoring cs and chemistry through my school.",
   ];
+  var text = AboutText[currentSlide];
+
   useEffect(() => {
     setTimeout(() => setLoading(false), 2700);
   }, []);
@@ -35,7 +38,41 @@ const About = () => {
               About Me
             </p>
             <div className="animate-[fadeIn_500ms_250ms_ease_forwards]">
-              <Slides list={AboutText} />
+              <div className="flex flex-col h-screen w-[90vh] items-center justify-center phone:w-[40vh]">
+                <Slide content={text} />
+                <div className="flex flex-row justify-evenly w-[inherit] mt-[10vh]">
+                  {/* prev button */}
+                  <button
+                    onClick={() => {
+                      if (currentSlide == 0) {
+                        setCurrentSlide(AboutText.length - 1);
+                      } else {
+                        setCurrentSlide(currentSlide - 1);
+                      }
+                    }}
+                    className="h-[50px] w-[120px] bg-white/30 rounded-[10px] mt-[20px] border-2 hover:drop-shadow-lg transition-all"
+                  >
+                    <p className="font-Poppins text-[16px] font-semibold">
+                      previous
+                    </p>
+                  </button>
+                  {/* next button */}
+                  <button
+                    onClick={() => {
+                      if (currentSlide == AboutText.length - 1) {
+                        setCurrentSlide(0);
+                      } else {
+                        setCurrentSlide(currentSlide + 1);
+                      }
+                    }}
+                    className="h-[50px] w-[120px] bg-white/30 rounded-[10px] mt-[20px] border-2 hover:drop-shadow-lg transition-all"
+                  >
+                    <p className="font-Poppins text-[16px] font-semibold">
+                      next
+                    </p>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
           <Footer />

@@ -27,20 +27,20 @@ const Contact = () => {
               <input
                 placeholder="Name"
                 type={"text"}
-                className="bg-[#AAAAAA] opacity-0 h-[50px] w-[150px] border-[1px] rounded-[10px] font-Poppins placeholder-black pl-[20px] animate-[fadeIn_1s_200ms_ease_forwards] ml-[5px]"
+                className="bg-[#AAAAAA] opacity-0 h-[50px] w-[150px] border-[1px] rounded-[10px] font-Poppins placeholder-black pl-[20px] animate-[fadeIn_1s_200ms_ease_forwards] ml-[5px] phone:w-[100px]"
               />
             </div>
             <textarea
               placeholder="What's on your mind?"
               type={"text"}
-              className="bg-[#AAAAAA] h-[150px] w-[384px] border-[1px] rounded-[10px] font-Poppins opacity-0 placeholder-black pl-[20px] pt-[10px] mt-[20px] animate-[fadeIn_1s_300ms_forwards]"
+              className="bg-[#AAAAAA] h-[150px] w-[380px] border-[1px] rounded-[10px] font-Poppins opacity-0 placeholder-black pl-[20px] pt-[10px] mt-[20px] animate-[fadeIn_1s_300ms_forwards] phone:w-[340px]"
             />
-            <button className="h-[50px] w-[120px] opacity-0 bg-white/30 rounded-[10px] mt-[20px] border-2 hover:drop-shadow-lg transition-all group animate-[fadeIn_1000ms_400ms_ease_forwards]">
+            <button className="h-[50px] w-[120px] opacity-0 bg-white/30 rounded-[10px] mt-[20px] border-2 hover:drop-shadow-lg transition-all group animate-[fadeIn_1s_400ms_ease_forwards]">
               <p className="font-Poppins font-medium transition-all text-black">
                 Send
               </p>
             </button>
-            <p className="flex flex-col font-Poppins mt-[10px] items-center justify-center phone:text-[14px]">
+            <p className="opacity-0 flex flex-col font-Poppins mt-[10px] items-center justify-center phone:text-[12px] animate-[fadeIn_1s_500ms_ease_forwards]">
               The contact doesn&apos;t work as I am not looking for a job.
             </p>
           </div>

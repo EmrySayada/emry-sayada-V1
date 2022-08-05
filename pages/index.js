@@ -27,7 +27,7 @@ function App() {
           <div className="flex flex-col overflow-hidden bg-[#AAAAAA] items-center justify-center">
             <div className="h-[90vh] w-screen flex items-center justify-center flex-col">
               <p
-                className="font-Poppins text-4xl font-semibold animate-[fadeIn_400ms_ease_forwards] group phone:text-3xl"
+                className="font-Poppins text-4xl font-semibold animate-[fadeIn_400ms_ease_forwards] group phone:text-2xl"
                 id="header1"
               >
                 <span className="opacity-0 animate-[fadeIn_200ms_200ms_ease_forwards]">

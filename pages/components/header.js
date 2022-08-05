@@ -6,6 +6,7 @@ const Header = () => {
   const router = useRouter();
   const currRoute = router.pathname;
   const [menuOpen, setMenuOpen] = useState(false);
+
   useEffect(() => {
     if (currRoute === "/") {
       const homeBtn = document.getElementById("homeBtn");
@@ -31,9 +32,8 @@ const Header = () => {
       contactBtn.classList.add("text-white", "font-medium");
     }
   };
-  const onMenuBtnPress = () => {
-    const hamMenu = document.getElementById("hamMenu");
-    const parent = document.getElementById("hamMenu");
+  const onMenuBtnPress = (ham) => {
+    const parent = ham;
     const homeBtn = parent.children[1];
     const aboutBtn = parent.children[2];
     const contactBtn = parent.children[3];
@@ -99,7 +99,11 @@ const Header = () => {
             </button>
           </Link>
           <div className="group visible computer:hidden">
-            <button onClick={onMenuBtnPress}>
+            <button
+              onClick={() => {
+                onMenuBtnPress(hamMenu);
+              }}
+            >
               <p className="font-Poppins">Menu</p>
             </button>
           </div>
@@ -107,7 +111,7 @@ const Header = () => {
       </div>
       {/* hamnurger menu items */}
       <div
-        className="flex flex-col w-screen h-[90vh] bg-[#BBBBBB] items-center justify-center absolute z-10 opacity-0 transition-all computer:hidden"
+        className="flex flex-col w-screen h-[90vh] bg-[#BBBBBB] items-center justify-center absolute z-0 opacity-0 transition-all computer:hidden"
         id="hamMenu"
       >
         <p className="font-Poppins font-semibold text-2xl phone:text-xl">

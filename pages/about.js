@@ -22,7 +22,6 @@ const About = () => {
     "The first year that I participated we didn't win however, the second year (this year) we did win!",
     "I am planning on majoring cs and chemistry through my school.",
   ];
-  var text = AboutText[currentSlide];
 
   useEffect(() => {
     setTimeout(() => setLoading(false), 2700);
@@ -39,7 +38,7 @@ const About = () => {
             </p>
             <div className="animate-[fadeIn_500ms_250ms_ease_forwards]">
               <div className="flex flex-col h-screen w-[90vh] items-center justify-center phone:w-[40vh]">
-                <Slide content={text} />
+                <Slide content={AboutText[currentSlide]} />
                 <div className="flex flex-row justify-evenly w-[inherit] mt-[10vh]">
                   {/* prev button */}
                   <button

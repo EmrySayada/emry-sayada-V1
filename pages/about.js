@@ -37,10 +37,9 @@ const About = () => {
               About Me
             </p>
             <div className="animate-[fadeIn_500ms_250ms_ease_forwards]">
-              <div className="flex flex-col h-screen w-[90vh] items-center justify-center phone:w-[40vh]">
+              {/* <div className="flex flex-col h-screen w-[90vh] items-center justify-center phone:w-[40vh]">
                 <Slide content={AboutText[currentSlide]} />
                 <div className="flex flex-row justify-evenly w-[inherit] mt-[10vh]">
-                  {/* prev button */}
                   <button
                     onClick={() => {
                       if (currentSlide == 0) {
@@ -55,7 +54,6 @@ const About = () => {
                       previous
                     </p>
                   </button>
-                  {/* next button */}
                   <button
                     onClick={() => {
                       if (currentSlide == AboutText.length - 1) {
@@ -71,7 +69,7 @@ const About = () => {
                     </p>
                   </button>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           <Footer />

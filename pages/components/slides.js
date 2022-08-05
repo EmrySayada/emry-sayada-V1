@@ -3,9 +3,10 @@ import Slide from "./slide";
 
 function Slides({ list }) {
   const [currentSlide, setCurrentSlide] = useState(0);
+  var text = list[currentSlide];
   return (
     <div className="flex flex-col h-screen w-[90vh] items-center justify-center phone:w-[40vh]">
-      <Slide content={list[currentSlide]} />
+      <Slide content={text} />
       <div className="flex flex-row justify-evenly w-[inherit] mt-[10vh]">
         {/* prev button */}
         <button
